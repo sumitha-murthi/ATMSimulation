@@ -1,0 +1,27 @@
+# Java
+/bin/
+/bin/
+/out/
+/target/
+*.class
+
+# VS Code
+.vscode/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# IDEs
+*.iml
+.idea/
+
+# Build artifacts
+/dist/
+/build/
+
+# JDBC driver - keep local, don't commit
+lib/ojdbc11.jar
+
+# Database files (if any)
+db/*.db
