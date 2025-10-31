@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { GitBranch, Shield, Repeat, Users } from 'lucide-react';
+import { GitBranch, Shield, Repeat } from 'lucide-react';
 
 export const About = () => {
   const patterns = [
@@ -30,12 +30,6 @@ export const About = () => {
       states: ['Fraud Check', 'Withdraw', 'Deposit', 'Balance Inquiry'],
       color: 'from-purple-500 to-purple-700',
     },
-  ];
-
-  const teamMembers = [
-    { name: 'Your Name', role: 'Full Stack Developer', contribution: 'Architecture & Implementation' },
-    { name: 'Team Member 2', role: 'Backend Developer', contribution: 'Database Design & APIs' },
-    { name: 'Team Member 3', role: 'Frontend Developer', contribution: 'UI/UX Design' },
   ];
 
   return (
@@ -260,45 +254,6 @@ export const About = () => {
           </div>
         </motion.div>
 
-        {/* Team */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="card"
-        >
-          <div className="text-center mb-8">
-            <Users className="w-12 h-12 text-primary dark:text-accent mx-auto mb-4" />
-            <h2 className="text-3xl font-bold text-textPrimary dark:text-white">
-              Meet the Team
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-6">
-            {teamMembers.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
-                className="bg-gray-100 dark:bg-gray-700 p-6 rounded-xl text-center"
-              >
-                <div className="w-20 h-20 bg-gradient-to-br from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <Users className="w-10 h-10 text-white" />
-                </div>
-                <h3 className="font-bold text-lg text-textPrimary dark:text-white mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-primary dark:text-accent font-semibold text-sm mb-2">
-                  {member.role}
-                </p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{member.contribution}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </div>
   );

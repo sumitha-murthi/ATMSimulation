@@ -235,7 +235,7 @@ export const Home = () => {
                 About
               </button>
               <a
-                href="https://github.com"
+                href="https://github.com/sumitha-murthi/ATMSimulation"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-accent transition-colors flex items-center gap-2"
