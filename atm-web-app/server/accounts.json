@@ -1,0 +1,37 @@
+[
+  {
+    "cardNumber": "1111222233334444",
+    "holderName": "Sumitha",
+    "pin": "1234",
+    "biometricCode": "123456789",
+    "balance": 5000
+  },
+  {
+    "cardNumber": "2222333344445555",
+    "holderName": "Divya",
+    "pin": "2345",
+    "biometricCode": "987654321",
+    "balance": 6000
+  },
+  {
+    "cardNumber": "3333444455556666",
+    "holderName": "Manish",
+    "pin": "3456",
+    "biometricCode": "112233445",
+    "balance": 7000
+  },
+  {
+    "cardNumber": "4444555566667777",
+    "holderName": "Nandhini",
+    "pin": "4567",
+    "biometricCode": "556677889",
+    "balance": 8000
+  },
+  {
+    "cardNumber": "1234567890123458",
+    "holderName": "New",
+    "pin": "1234",
+    "biometricCode": "123456789",
+    "balance": 500000
+  }
+]
